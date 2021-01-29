@@ -4,6 +4,10 @@
  */
 // Where is the circle
 let x, y;
+let watermelon_1;
+let watermelon_2;
+let guy1, guy2;
+
 
 function setup() {
   createCanvas(720, 400);
@@ -12,7 +16,7 @@ function setup() {
   y = height;
 
   myButton = new Clickable();     //Create button
-  myButton.locate(20, 20);        //Position Button
+  myButton.locate(x/2, 20);        //Position Button
   myButton.text = "EXPLOSION!";
   myButton.onPress = function(){  //When myButton is pressed
     this.color = "#AAAAFF";       //Change button color
@@ -20,10 +24,14 @@ function setup() {
   }
   
 
+  watermelon_1 = loadImage("/assets/watermelon.png");
+
+
 }
 
 function draw() {
   background(200);
+  image (watermelon_1,0,0);
   
   // Draw a circle
   stroke(50);
