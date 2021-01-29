@@ -15,7 +15,7 @@ function setup() {
   x = width / 2;
   y = height;
 
-  watermelon_1 = loadImage("/assets/watermelon.png");
+  watermelon_1 = loadImage("../assets/watermelon.png");
 
   myButton = new Clickable();     //Create button
   myButton.locate(x/2, 20);        //Position Button
