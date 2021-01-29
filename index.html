@@ -28,22 +28,34 @@
 			<source src="assets/watermelonwar.mp4" type="video/mp4">
 		</video>
 
-		<button id="animate">Animate!</button>
+		<!-- Audio is taken from https://www.zapsplat.com/music/bomb-whizz-in-and-impact-close-by-medium-explosion-3/  -->
+		<audio id="aud">
+			<source src="assets/zapsplat_warfare_bomb_whizz_in_hit_close_by_explosion_med_003_48060.mp3" type="audio/mpeg">
+		</audio>
+
+		<button id="animate">Start War!</button>
 
 
 
 	<script>
 
 		var myAnimation =  document.getElementById("vid");
-
+		var mySound = document.getElementById("aud");
 		function playAnimation(){
-			if (myAnimation.paused) 
-   				 myAnimation.play(); 
-  			else 
-   				 myAnimation.pause(); 
+
+
+			myAnimation.play(); 
+
+
 		}
 
-		document.getElementById("animate").addEventListener("click",playAnimation)
+		function playSound(){
+			mySound.play()
+			
+		}
+
+		document.getElementById("animate").addEventListener("click",playSound);
+		document.getElementById("animate").addEventListener("click",playAnimation);
 	</script>
 
 </body>
