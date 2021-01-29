@@ -15,23 +15,25 @@ function setup() {
   x = width / 2;
   y = height;
 
+  watermelon_1 = loadImage("/assets/watermelon.png");
+
   myButton = new Clickable();     //Create button
   myButton.locate(x/2, 20);        //Position Button
   myButton.text = "EXPLOSION!";
   myButton.onPress = function(){  //When myButton is pressed
     this.color = "#AAAAFF";       //Change button color
-    alert("test!");                //Show an alert message
+    alert("testttt!");                //Show an alert message
   }
   
 
-  watermelon_1 = loadImage("/assets/watermelon.png");
+
 
 
 }
 
 function draw() {
   background(200);
-  image (watermelon_1,0,0);
+  image(watermelon_1, 0, height / 2, img.width / 2, img.height / 2);
   
   // Draw a circle
   stroke(50);
