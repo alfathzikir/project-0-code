@@ -33,7 +33,7 @@ function setup() {
 
 function draw() {
   background(200);
-  image(watermelon_1, 0, height / 2, img.width / 2, img.height / 2);
+  image(watermelon_1, 0, height / 2, watermelon_1.width / 2, watermelon_1.height / 2);
   
   // Draw a circle
   stroke(50);
