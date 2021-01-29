@@ -21,16 +21,30 @@
 
 	</style>
 </head>
-	<button>Animate!</button>
 
   <body>
 
-	<div class=".stoppable">
-		<canvas style="display: none" width="100" height="100"></canvas>
-		<img style="display: block" src="assets/watermelonwar.gif"/>
-	</div>
+		<video id="vid" >
+			<source src="assets/watermelonwar.mp4" type="video/mp4">
+		</video>
+
+		<button id="animate">Animate!</button>
 
 
-  
+
+	<script>
+
+		var myAnimation =  document.getElementById("vid");
+
+		function playAnimation(){
+			if (myAnimation.paused) 
+   				 myAnimation.play(); 
+  			else 
+   				 myAnimation.pause(); 
+		}
+
+		document.getElementById("animate").addEventListener("click",playAnimation)
+	</script>
+
 </body>
 </html>
