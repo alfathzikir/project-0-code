@@ -22,7 +22,7 @@ function setup() {
   myButton.text = "EXPLOSION!";
   myButton.onPress = function(){  //When myButton is pressed
     this.color = "#AAAAFF";       //Change button color
-    alert("testttt!");                //Show an alert message
+    alert("testttttttttttttttt!");                //Show an alert message
   }
   
 
